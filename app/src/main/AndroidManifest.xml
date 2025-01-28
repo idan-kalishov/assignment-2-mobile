@@ -11,15 +11,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignment2mobile"
-        tools:targetApi="31">
+        tools:targetApi="34">
+        <activity android:name=".activities.StudentDetailsActivity" />
+        <activity android:name=".activities.EditStudentActivity" />
+
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.StudentListActivity"
+            android:theme="@style/Theme.Assignment2mobile"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.Assignment2mobile">
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
